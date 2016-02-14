@@ -2,7 +2,7 @@
 lock '3.1.0'
 
 set :application, 'Personal_Website'
-set :repo_url, 'git@github.com:hobozhang/personal_website_1.git'
+set :repo_url, 'git@github.com:Msjoycullen/personal_website_1.git'
 
 # Default branch is :master
 # ask :branch, proc { `git rev-parse --abbrev-ref HEAD`.chomp }
