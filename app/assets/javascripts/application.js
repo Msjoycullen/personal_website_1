@@ -12,5 +12,10 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require js/bootstrap
 //= require turbolinks
-//= require_tree .
+//= require angular/angular
+
+//= require slick.min
+//= require project
+//= require controllers/ProjectController

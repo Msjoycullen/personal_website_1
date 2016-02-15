@@ -1,3 +1,159 @@
 // Place all the styles related to the Pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif
+}
+
+/* Navigation bar */
+
+.navbar {
+	margin-bottom: 0;
+	background-color: #2B3856;
+	border: none;
+	border-radius: 0;
+	font-weight: bold;
+}
+
+.navbar a {
+	color: #C8C8C8 !important;
+}
+
+.navbar a:hover {
+	color: #F8F8F8 !important;
+}
+
+.navbar-nav a {
+	text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+	.navbar-nav {float: right;}
+}
+
+.navbar-default .navbar-toggle,
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+	border-color: #8F8F8F;
+}
+
+.navbar-default .navbar-toggle:hover {
+	border-color: #DDDDDD;
+}
+
+/* Top section */
+
+.top {
+	background-color: rgba(192,192,192,0.5);
+	position: relative;
+}
+
+.top .headerTitle {
+	display: inline-block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+	z-index: 2;
+	font-size: 40px;
+	font-weight: bold;
+	color: #eee;
+}
+
+.top hr {
+	border-top: 2px solid #eee;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	max-width: 80px;
+}
+.top .imageOverlay {
+	position: absolute;
+	background-color: rgba(120,120,120,0.4);
+	z-index: 1;
+	width: 100%;
+	height: 100%;
+}
+
+.top .topCarousel img {
+	height: auto;
+	width: 100%;
+}
+
+@media (max-width: 767px) {
+	.top .cropImage {
+	  position: relative;
+	  height: 400px !important;
+	  overflow: hidden;
+	}
+
+	.top .cropImage img {
+	  position: absolute;
+	  height: 100%;
+	  width: auto;
+	  left: 50%;
+	  top: 50%;
+	  -webkit-transform: translate(-50%,-50%);
+	  -ms-transform: translate(-50%,-50%);
+	  transform: translate(-50%,-50%);
+	}
+}
+
+/* Main section is centered by default */
+
+.main {
+	margin-top: 60px;
+}
+
+.project-title {
+	margin-top: 0;
+}
+
+@media (max-width: 991px) {
+	.main {margin-top: 30px;}
+	.intro {margin-top: 30px;}
+	.project-title {margin-top: 15px;}
+}
+
+/* Footer */
+
+.footer {
+	margin-top: 60px;
+}
+
+.footer .contact {
+	border: 0;
+	padding: 0;
+	margin-bottom: 5px;
+	display: block;
+	text-align: center;
+}
+
+.footer .contact a {
+	font-size: 0;
+	margin-left: 5px;
+}
+
+.footer .contact a:hover {
+	opacity: 0.7;
+}
+
+.footer .contact img {
+	width: 32px;
+	height: 32px;
+	border-radius: 4px;
+}
+
+.footer .legal {
+	text-align: center;
+}
+
+.footer .authenticate {
+	float: right;
+	margin-right: 20px;
+	font-size: 12px;
+}
