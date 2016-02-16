@@ -800,3 +800,105 @@ Started GET "/assets/icons/github-c4a2598129c8417f2e112a39167a2253d7427a9e1aa3f7
 
 
 Started GET "/assets/icons/facebook-482509c2698ae4a152b165f7c7bec4728f10cc316e69319a141db19613453cd4.png" for ::1 at 2016-02-15 17:54:18 -0500
+
+
+Started GET "/" for ::1 at 2016-02-16 17:43:07 -0500
+Processing by PagesController#about as HTML
+  Rendered pages/about.html.erb within layouts/application (308.9ms)
+Completed 200 OK in 475ms (Views: 459.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-02-16 17:43:08 -0500
+Processing by PagesController#about as HTML
+  Rendered pages/about.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 75ms (Views: 74.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/slick/ajax-loader.gif" for ::1 at 2016-02-16 17:43:08 -0500
+
+
+Started GET "/" for ::1 at 2016-02-16 17:44:03 -0500
+Processing by PagesController#about as HTML
+  Rendered pages/about.html.erb within layouts/application (320.3ms)
+Completed 200 OK in 460ms (Views: 452.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/css/bootstrap.self-598365399e6ae8f5a456a189663bac8ef9b8996ace38626328403f280fd63400.css?body=1" for ::1 at 2016-02-16 17:44:04 -0500
+
+
+Started GET "/assets/slick/slick-theme.self-822f53109d9d750a8c0c8c189ddb0175b5e0226b66cbaa6a699e78e0f512e2dd.css?body=1" for ::1 at 2016-02-16 17:44:04 -0500
+
+
+Started GET "/assets/slick/slick.self-3e611f720b763cc018016abb8bb4037bff655c1ca995b84200bcb5efecfe24f9.css?body=1" for ::1 at 2016-02-16 17:44:04 -0500
+
+
+Started GET "/assets/comments.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-16 17:44:04 -0500
+
+
+Started GET "/assets/pages.self-68d4caa79a35a1f0c106f13157d9a0b2eb76dae420b6c6ba645f4eb1f2fec943.css?body=1" for ::1 at 2016-02-16 17:44:04 -0500
+
+
+Started GET "/assets/articles.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-16 17:44:04 -0500
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-16 17:44:04 -0500
+
+
+Started GET "/assets/application.self-d885a0a66bd595c10edb24f8879f94e334d88be0730c4d7c7a7b57c731c09037.css?body=1" for ::1 at 2016-02-16 17:44:04 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-16 17:44:04 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-16 17:44:04 -0500
+
+
+Started GET "/assets/js/bootstrap.self-d0e973a52d36a01036265aeefaf2d1ae3499d2cb231a9be3bd846432daf231de.js?body=1" for ::1 at 2016-02-16 17:44:04 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-16 17:44:04 -0500
+
+
+Started GET "/assets/angular/angular.self-d7c642a2239d433e219a2df47d65f3290d6ec49b679e42a3c8e8099a4a86d8f0.js?body=1" for ::1 at 2016-02-16 17:44:04 -0500
+
+
+Started GET "/assets/slick.min.self-2d7ee46f8f7bd3ae37fbda706b02238b45d75f99908d181c717abb7be3765243.js?body=1" for ::1 at 2016-02-16 17:44:04 -0500
+
+
+Started GET "/assets/project.self-8df8f1d3667a170aa21679541c755cf98b8c1752f1498e97944cfc77387d6782.js?body=1" for ::1 at 2016-02-16 17:44:04 -0500
+
+
+Started GET "/assets/controllers/ProjectController.self-e747f41a5a7708c247ec663cdf56432554a0fbb40a54c9e96906d319e316d75b.js?body=1" for ::1 at 2016-02-16 17:44:04 -0500
+
+
+Started GET "/assets/top/MonumentValley-e8b76b962b83884ce1e7646bbba3e4d2a62d735a1031ba6d5725d38119b8ee38.jpg" for ::1 at 2016-02-16 17:44:04 -0500
+
+
+Started GET "/assets/application.self-a1a74291c4c48f2f663a025ffa678498d6448b849a2d74c0ca25e39ee192c0a7.js?body=1" for ::1 at 2016-02-16 17:44:04 -0500
+
+
+Started GET "/assets/top/GrandCanyon-2655f140a6fe7ae7e9408067e65abe8236a693cd515fc5579863f63448143430.jpg" for ::1 at 2016-02-16 17:44:04 -0500
+
+
+Started GET "/assets/top/CedarBreaks-b861240555367cdc59a6aaf177b52f1b9955dc754587070c1781352e0b3e76cc.jpg" for ::1 at 2016-02-16 17:44:04 -0500
+
+
+Started GET "/assets/top/GrandTeton-cbdd20386bc51c93d708212e9811cad988dbb952cd0b26ca66e96df80b6ef458.jpg" for ::1 at 2016-02-16 17:44:04 -0500
+
+
+Started GET "/assets/icons/linkedin-9ed1fb640a16936cdd35a4527e0ff2486bbe2eab6b723ee5caecb64cd109babb.png" for ::1 at 2016-02-16 17:44:04 -0500
+
+
+Started GET "/assets/profile-ca497b0cad1860840b46ee4099cadec9e7e3680360fd3d84f2534aeedc1181c2.jpg" for ::1 at 2016-02-16 17:44:04 -0500
+
+
+Started GET "/assets/icons/facebook-482509c2698ae4a152b165f7c7bec4728f10cc316e69319a141db19613453cd4.png" for ::1 at 2016-02-16 17:44:04 -0500
+
+
+Started GET "/assets/top/CentreIsland-60fbf5f049e9652ef6df871ff37beb5171fd6d9a787fbfc69b521f9849269359.jpg" for ::1 at 2016-02-16 17:44:04 -0500
+
+
+Started GET "/assets/icons/github-c4a2598129c8417f2e112a39167a2253d7427a9e1aa3f7e34b761da2eeab3c8c.png" for ::1 at 2016-02-16 17:44:04 -0500
+
+
+Started GET "/assets/icons/email-4d64f1f502f8e9b176afbe4542a97446901ce59c59cd90046f7c35b98ba9fd3e.png" for ::1 at 2016-02-16 17:44:04 -0500
