@@ -2765,3 +2765,545 @@ Processing by ArticlesController#index as HTML
   [1m[36mArticle Load (0.1ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
   Rendered articles/index.html.erb within layouts/application (0.5ms)
 Completed 200 OK in 48ms (Views: 47.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for ::1 at 2016-02-23 20:15:49 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PagesController#about as HTML
+  Rendered pages/about.html.erb within layouts/application (289.0ms)
+Completed 200 OK in 428ms (Views: 419.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-02-23 20:15:50 -0500
+Processing by PagesController#about as HTML
+  Rendered pages/about.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 82ms (Views: 81.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/slick/ajax-loader.gif" for ::1 at 2016-02-23 20:15:50 -0500
+
+
+Started GET "/blog" for ::1 at 2016-02-23 20:15:52 -0500
+Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (0.1ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 48ms (Views: 44.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/articles/new" for ::1 at 2016-02-23 20:15:54 -0500
+Processing by ArticlesController#new as HTML
+  Rendered articles/_form.html.erb (30.3ms)
+  Rendered articles/new.html.erb within layouts/application (38.8ms)
+Completed 200 OK in 87ms (Views: 81.9ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/articles" for ::1 at 2016-02-23 20:16:02 -0500
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"iT1s1805+PZdfpkZ4mynfaclcVCoz+wSZglDsV4AjzSFFvDisR3LabrzmwJEQ/srVGNOOt2Gb66YVc+oAxAckw==", "article"=>{"title"=>"Joy's First Blog Post", "body"=>"Hello 1!"}, "commit"=>"Create Article"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "articles" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["title", "Joy's First Blog Post"], ["body", "Hello 1!"], ["created_at", "2016-02-24 01:16:02.124137"], ["updated_at", "2016-02-24 01:16:02.124137"]]
+  [1m[36m (1.7ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/articles/4
+Completed 302 Found in 11ms (ActiveRecord: 2.7ms)
+
+
+Started GET "/articles/4" for ::1 at 2016-02-23 20:16:02 -0500
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mArticle Load (0.6ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered articles/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 68ms (Views: 55.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/articles" for ::1 at 2016-02-23 20:16:04 -0500
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 44ms (Views: 43.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/articles/new" for ::1 at 2016-02-23 20:16:06 -0500
+Processing by ArticlesController#new as HTML
+  Rendered articles/_form.html.erb (2.7ms)
+  Rendered articles/new.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 53ms (Views: 52.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/articles" for ::1 at 2016-02-23 20:16:13 -0500
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"abi6i5pv4YtPoxM10L8fC3eitv2dKE9Kuj8K77s8V/Nlkya+5kvSFKguES52kENdhOSJl+hhzPZEY4b25izEVA==", "article"=>{"title"=>"Joy's Second Blog Post", "body"=>"Hello 2!"}, "commit"=>"Create Article"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "articles" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Joy's Second Blog Post"], ["body", "Hello 2!"], ["created_at", "2016-02-24 01:16:13.314586"], ["updated_at", "2016-02-24 01:16:13.314586"]]
+  [1m[35m (1.5ms)[0m  commit transaction
+Redirected to http://localhost:3000/articles/5
+Completed 302 Found in 5ms (ActiveRecord: 2.0ms)
+
+
+Started GET "/articles/5" for ::1 at 2016-02-23 20:16:13 -0500
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 5]]
+  Rendered articles/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 32ms (Views: 30.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/articles" for ::1 at 2016-02-23 20:16:15 -0500
+Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (0.1ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 34ms (Views: 33.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/articles" for ::1 at 2016-02-23 20:35:39 -0500
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 93ms (Views: 91.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/comments.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-23 20:35:39 -0500
+
+
+Started GET "/assets/css/bootstrap.self-598365399e6ae8f5a456a189663bac8ef9b8996ace38626328403f280fd63400.css?body=1" for ::1 at 2016-02-23 20:35:39 -0500
+
+
+Started GET "/assets/slick/slick-theme.self-822f53109d9d750a8c0c8c189ddb0175b5e0226b66cbaa6a699e78e0f512e2dd.css?body=1" for ::1 at 2016-02-23 20:35:39 -0500
+
+
+Started GET "/assets/pages.self-68d4caa79a35a1f0c106f13157d9a0b2eb76dae420b6c6ba645f4eb1f2fec943.css?body=1" for ::1 at 2016-02-23 20:35:39 -0500
+
+
+Started GET "/assets/articles.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-23 20:35:39 -0500
+
+
+Started GET "/assets/slick/slick.self-3e611f720b763cc018016abb8bb4037bff655c1ca995b84200bcb5efecfe24f9.css?body=1" for ::1 at 2016-02-23 20:35:39 -0500
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-23 20:35:39 -0500
+
+
+Started GET "/assets/application.self-d885a0a66bd595c10edb24f8879f94e334d88be0730c4d7c7a7b57c731c09037.css?body=1" for ::1 at 2016-02-23 20:35:39 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-23 20:35:39 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-23 20:35:39 -0500
+
+
+Started GET "/assets/js/bootstrap.self-d0e973a52d36a01036265aeefaf2d1ae3499d2cb231a9be3bd846432daf231de.js?body=1" for ::1 at 2016-02-23 20:35:39 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-23 20:35:39 -0500
+
+
+Started GET "/assets/angular/angular.self-d7c642a2239d433e219a2df47d65f3290d6ec49b679e42a3c8e8099a4a86d8f0.js?body=1" for ::1 at 2016-02-23 20:35:39 -0500
+
+
+Started GET "/assets/project.self-8df8f1d3667a170aa21679541c755cf98b8c1752f1498e97944cfc77387d6782.js?body=1" for ::1 at 2016-02-23 20:35:39 -0500
+
+
+Started GET "/assets/controllers/ProjectController.self-e747f41a5a7708c247ec663cdf56432554a0fbb40a54c9e96906d319e316d75b.js?body=1" for ::1 at 2016-02-23 20:35:39 -0500
+
+
+Started GET "/assets/slick.min.self-2d7ee46f8f7bd3ae37fbda706b02238b45d75f99908d181c717abb7be3765243.js?body=1" for ::1 at 2016-02-23 20:35:39 -0500
+
+
+Started GET "/assets/application.self-a1a74291c4c48f2f663a025ffa678498d6448b849a2d74c0ca25e39ee192c0a7.js?body=1" for ::1 at 2016-02-23 20:35:39 -0500
+
+
+Started GET "/assets/top/MonumentValley-e8b76b962b83884ce1e7646bbba3e4d2a62d735a1031ba6d5725d38119b8ee38.jpg" for ::1 at 2016-02-23 20:35:39 -0500
+
+
+Started GET "/assets/top/CedarBreaks-b861240555367cdc59a6aaf177b52f1b9955dc754587070c1781352e0b3e76cc.jpg" for ::1 at 2016-02-23 20:35:39 -0500
+
+
+Started GET "/assets/top/GrandTeton-cbdd20386bc51c93d708212e9811cad988dbb952cd0b26ca66e96df80b6ef458.jpg" for ::1 at 2016-02-23 20:35:39 -0500
+
+
+Started GET "/assets/top/CentreIsland-60fbf5f049e9652ef6df871ff37beb5171fd6d9a787fbfc69b521f9849269359.jpg" for ::1 at 2016-02-23 20:35:39 -0500
+
+
+Started GET "/assets/icons/facebook-482509c2698ae4a152b165f7c7bec4728f10cc316e69319a141db19613453cd4.png" for ::1 at 2016-02-23 20:35:39 -0500
+
+
+Started GET "/assets/icons/linkedin-9ed1fb640a16936cdd35a4527e0ff2486bbe2eab6b723ee5caecb64cd109babb.png" for ::1 at 2016-02-23 20:35:39 -0500
+
+
+Started GET "/assets/top/GrandCanyon-2655f140a6fe7ae7e9408067e65abe8236a693cd515fc5579863f63448143430.jpg" for ::1 at 2016-02-23 20:35:39 -0500
+
+
+Started GET "/assets/icons/github-c4a2598129c8417f2e112a39167a2253d7427a9e1aa3f7e34b761da2eeab3c8c.png" for ::1 at 2016-02-23 20:35:39 -0500
+
+
+Started GET "/assets/icons/email-4d64f1f502f8e9b176afbe4542a97446901ce59c59cd90046f7c35b98ba9fd3e.png" for ::1 at 2016-02-23 20:35:39 -0500
+
+
+Started GET "/articles" for ::1 at 2016-02-23 21:10:42 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (0.2ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/index.html.erb within layouts/application (9.6ms)
+Completed 200 OK in 492ms (Views: 478.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/css/bootstrap.self-598365399e6ae8f5a456a189663bac8ef9b8996ace38626328403f280fd63400.css?body=1" for ::1 at 2016-02-23 21:10:43 -0500
+
+
+Started GET "/assets/articles.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-23 21:10:43 -0500
+
+
+Started GET "/assets/slick/slick.self-3e611f720b763cc018016abb8bb4037bff655c1ca995b84200bcb5efecfe24f9.css?body=1" for ::1 at 2016-02-23 21:10:43 -0500
+
+
+Started GET "/assets/comments.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-23 21:10:43 -0500
+
+
+Started GET "/assets/pages.self-68d4caa79a35a1f0c106f13157d9a0b2eb76dae420b6c6ba645f4eb1f2fec943.css?body=1" for ::1 at 2016-02-23 21:10:43 -0500
+
+
+Started GET "/assets/slick/slick-theme.self-822f53109d9d750a8c0c8c189ddb0175b5e0226b66cbaa6a699e78e0f512e2dd.css?body=1" for ::1 at 2016-02-23 21:10:43 -0500
+
+
+Started GET "/assets/application.self-d885a0a66bd595c10edb24f8879f94e334d88be0730c4d7c7a7b57c731c09037.css?body=1" for ::1 at 2016-02-23 21:10:43 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-23 21:10:43 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-23 21:10:43 -0500
+
+
+Started GET "/assets/js/bootstrap.self-d0e973a52d36a01036265aeefaf2d1ae3499d2cb231a9be3bd846432daf231de.js?body=1" for ::1 at 2016-02-23 21:10:43 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-23 21:10:43 -0500
+
+
+Started GET "/assets/angular/angular.self-d7c642a2239d433e219a2df47d65f3290d6ec49b679e42a3c8e8099a4a86d8f0.js?body=1" for ::1 at 2016-02-23 21:10:43 -0500
+
+
+Started GET "/assets/slick.min.self-2d7ee46f8f7bd3ae37fbda706b02238b45d75f99908d181c717abb7be3765243.js?body=1" for ::1 at 2016-02-23 21:10:43 -0500
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-23 21:10:43 -0500
+
+
+Started GET "/assets/project.self-8df8f1d3667a170aa21679541c755cf98b8c1752f1498e97944cfc77387d6782.js?body=1" for ::1 at 2016-02-23 21:10:43 -0500
+
+
+Started GET "/assets/controllers/ProjectController.self-e747f41a5a7708c247ec663cdf56432554a0fbb40a54c9e96906d319e316d75b.js?body=1" for ::1 at 2016-02-23 21:10:43 -0500
+
+
+Started GET "/assets/application.self-a1a74291c4c48f2f663a025ffa678498d6448b849a2d74c0ca25e39ee192c0a7.js?body=1" for ::1 at 2016-02-23 21:10:43 -0500
+
+
+Started GET "/assets/top/MonumentValley-e8b76b962b83884ce1e7646bbba3e4d2a62d735a1031ba6d5725d38119b8ee38.jpg" for ::1 at 2016-02-23 21:10:43 -0500
+
+
+Started GET "/assets/icons/facebook-482509c2698ae4a152b165f7c7bec4728f10cc316e69319a141db19613453cd4.png" for ::1 at 2016-02-23 21:10:43 -0500
+
+
+Started GET "/assets/top/GrandCanyon-2655f140a6fe7ae7e9408067e65abe8236a693cd515fc5579863f63448143430.jpg" for ::1 at 2016-02-23 21:10:43 -0500
+
+
+Started GET "/assets/top/GrandTeton-cbdd20386bc51c93d708212e9811cad988dbb952cd0b26ca66e96df80b6ef458.jpg" for ::1 at 2016-02-23 21:10:43 -0500
+
+
+Started GET "/assets/icons/github-c4a2598129c8417f2e112a39167a2253d7427a9e1aa3f7e34b761da2eeab3c8c.png" for ::1 at 2016-02-23 21:10:43 -0500
+
+
+Started GET "/assets/top/CedarBreaks-b861240555367cdc59a6aaf177b52f1b9955dc754587070c1781352e0b3e76cc.jpg" for ::1 at 2016-02-23 21:10:43 -0500
+
+
+Started GET "/assets/top/CentreIsland-60fbf5f049e9652ef6df871ff37beb5171fd6d9a787fbfc69b521f9849269359.jpg" for ::1 at 2016-02-23 21:10:43 -0500
+
+
+Started GET "/assets/icons/email-4d64f1f502f8e9b176afbe4542a97446901ce59c59cd90046f7c35b98ba9fd3e.png" for ::1 at 2016-02-23 21:10:43 -0500
+
+
+Started GET "/assets/icons/linkedin-9ed1fb640a16936cdd35a4527e0ff2486bbe2eab6b723ee5caecb64cd109babb.png" for ::1 at 2016-02-23 21:10:43 -0500
+
+
+Started GET "/articles/4" for ::1 at 2016-02-23 21:11:29 -0500
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mArticle Load (0.3ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered articles/show.html.erb within layouts/application (12.1ms)
+Completed 200 OK in 64ms (Views: 49.0ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/articles/4" for ::1 at 2016-02-23 21:11:36 -0500
+Processing by ArticlesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"6IbXsPp9mFJh5TJDoH3RMD2PiQhUy0Gek4t2vc4I4JXkrUuFhlmrzYZoMFgGUo1mzsm2YiGCwiJt1/qkkxhzMg==", "id"=>"4"}
+  [1m[35mArticle Load (0.1ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  DELETE FROM "articles" WHERE "articles"."id" = ?  [["id", 4]]
+  [1m[36m (1.5ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/articles
+Completed 302 Found in 5ms (ActiveRecord: 2.1ms)
+
+
+Started GET "/articles" for ::1 at 2016-02-23 21:11:36 -0500
+Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (0.1ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 57ms (Views: 56.3ms | ActiveRecord: 0.1ms)
+
+
+Started DELETE "/articles/5" for ::1 at 2016-02-23 21:11:39 -0500
+Processing by ArticlesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"4ZK8L0S4h5vvbXVVShPg+kTGTDkykvuaG+a3+hV/UzXtuSAaOJy0BAjgd07sPLyst4BzU0fbeCblujvjSG/Akg==", "id"=>"5"}
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 5]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "articles" WHERE "articles"."id" = ?[0m  [["id", 5]]
+  [1m[35m (1.7ms)[0m  commit transaction
+Redirected to http://localhost:3000/articles
+Completed 302 Found in 6ms (ActiveRecord: 2.2ms)
+
+
+Started GET "/articles" for ::1 at 2016-02-23 21:11:39 -0500
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.3ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 41ms (Views: 40.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/articles" for ::1 at 2016-02-23 21:11:45 -0500
+Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (0.1ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 37ms (Views: 36.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/css/bootstrap.self-598365399e6ae8f5a456a189663bac8ef9b8996ace38626328403f280fd63400.css?body=1" for ::1 at 2016-02-23 21:11:45 -0500
+
+
+Started GET "/assets/articles.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-23 21:11:45 -0500
+
+
+Started GET "/assets/slick/slick-theme.self-822f53109d9d750a8c0c8c189ddb0175b5e0226b66cbaa6a699e78e0f512e2dd.css?body=1" for ::1 at 2016-02-23 21:11:45 -0500
+
+
+Started GET "/assets/pages.self-68d4caa79a35a1f0c106f13157d9a0b2eb76dae420b6c6ba645f4eb1f2fec943.css?body=1" for ::1 at 2016-02-23 21:11:45 -0500
+
+
+Started GET "/assets/comments.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-23 21:11:45 -0500
+
+
+Started GET "/assets/slick/slick.self-3e611f720b763cc018016abb8bb4037bff655c1ca995b84200bcb5efecfe24f9.css?body=1" for ::1 at 2016-02-23 21:11:45 -0500
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-23 21:11:45 -0500
+
+
+Started GET "/assets/application.self-d885a0a66bd595c10edb24f8879f94e334d88be0730c4d7c7a7b57c731c09037.css?body=1" for ::1 at 2016-02-23 21:11:45 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-23 21:11:45 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-23 21:11:45 -0500
+
+
+Started GET "/assets/js/bootstrap.self-d0e973a52d36a01036265aeefaf2d1ae3499d2cb231a9be3bd846432daf231de.js?body=1" for ::1 at 2016-02-23 21:11:45 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-23 21:11:45 -0500
+
+
+Started GET "/assets/angular/angular.self-d7c642a2239d433e219a2df47d65f3290d6ec49b679e42a3c8e8099a4a86d8f0.js?body=1" for ::1 at 2016-02-23 21:11:45 -0500
+
+
+Started GET "/assets/slick.min.self-2d7ee46f8f7bd3ae37fbda706b02238b45d75f99908d181c717abb7be3765243.js?body=1" for ::1 at 2016-02-23 21:11:45 -0500
+
+
+Started GET "/assets/project.self-8df8f1d3667a170aa21679541c755cf98b8c1752f1498e97944cfc77387d6782.js?body=1" for ::1 at 2016-02-23 21:11:45 -0500
+
+
+Started GET "/assets/controllers/ProjectController.self-e747f41a5a7708c247ec663cdf56432554a0fbb40a54c9e96906d319e316d75b.js?body=1" for ::1 at 2016-02-23 21:11:45 -0500
+
+
+Started GET "/assets/application.self-a1a74291c4c48f2f663a025ffa678498d6448b849a2d74c0ca25e39ee192c0a7.js?body=1" for ::1 at 2016-02-23 21:11:45 -0500
+
+
+Started GET "/assets/top/MonumentValley-e8b76b962b83884ce1e7646bbba3e4d2a62d735a1031ba6d5725d38119b8ee38.jpg" for ::1 at 2016-02-23 21:11:45 -0500
+
+
+Started GET "/assets/top/CentreIsland-60fbf5f049e9652ef6df871ff37beb5171fd6d9a787fbfc69b521f9849269359.jpg" for ::1 at 2016-02-23 21:11:45 -0500
+
+
+Started GET "/assets/top/GrandCanyon-2655f140a6fe7ae7e9408067e65abe8236a693cd515fc5579863f63448143430.jpg" for ::1 at 2016-02-23 21:11:45 -0500
+
+
+Started GET "/assets/top/CedarBreaks-b861240555367cdc59a6aaf177b52f1b9955dc754587070c1781352e0b3e76cc.jpg" for ::1 at 2016-02-23 21:11:45 -0500
+
+
+Started GET "/assets/icons/facebook-482509c2698ae4a152b165f7c7bec4728f10cc316e69319a141db19613453cd4.png" for ::1 at 2016-02-23 21:11:45 -0500
+
+
+Started GET "/assets/top/GrandTeton-cbdd20386bc51c93d708212e9811cad988dbb952cd0b26ca66e96df80b6ef458.jpg" for ::1 at 2016-02-23 21:11:45 -0500
+
+
+Started GET "/assets/icons/email-4d64f1f502f8e9b176afbe4542a97446901ce59c59cd90046f7c35b98ba9fd3e.png" for ::1 at 2016-02-23 21:11:45 -0500
+
+
+Started GET "/assets/icons/github-c4a2598129c8417f2e112a39167a2253d7427a9e1aa3f7e34b761da2eeab3c8c.png" for ::1 at 2016-02-23 21:11:45 -0500
+
+
+Started GET "/assets/icons/linkedin-9ed1fb640a16936cdd35a4527e0ff2486bbe2eab6b723ee5caecb64cd109babb.png" for ::1 at 2016-02-23 21:11:45 -0500
+
+
+Started GET "/" for ::1 at 2016-02-24 02:56:47 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PagesController#about as HTML
+  Rendered pages/about.html.erb within layouts/application (318.0ms)
+Completed 200 OK in 485ms (Views: 475.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-02-24 02:56:48 -0500
+Processing by PagesController#about as HTML
+  Rendered pages/about.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 78ms (Views: 76.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/slick/ajax-loader.gif" for ::1 at 2016-02-24 02:56:48 -0500
+
+
+Started GET "/articles/new" for ::1 at 2016-02-24 02:56:53 -0500
+Processing by ArticlesController#new as HTML
+  Rendered articles/_form.html.erb (52.9ms)
+  Rendered articles/new.html.erb within layouts/application (61.9ms)
+Completed 200 OK in 132ms (Views: 121.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2016-02-24 02:57:11 -0500
+Processing by PagesController#about as HTML
+  Rendered pages/about.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 72ms (Views: 71.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/slick/ajax-loader.gif" for ::1 at 2016-02-24 02:57:12 -0500
+
+
+Started GET "/articles/new" for ::1 at 2016-02-24 03:12:28 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ArticlesController#new as HTML
+  Rendered articles/_form.html.erb (42.9ms)
+  Rendered articles/new.html.erb within layouts/application (51.3ms)
+Completed 200 OK in 510ms (Views: 493.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/comments.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-24 03:12:28 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-24 03:12:28 -0500
+
+
+Started GET "/assets/slick/slick-theme.self-822f53109d9d750a8c0c8c189ddb0175b5e0226b66cbaa6a699e78e0f512e2dd.css?body=1" for ::1 at 2016-02-24 03:12:28 -0500
+
+
+Started GET "/assets/articles.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-24 03:12:28 -0500
+
+
+Started GET "/assets/pages.self-68d4caa79a35a1f0c106f13157d9a0b2eb76dae420b6c6ba645f4eb1f2fec943.css?body=1" for ::1 at 2016-02-24 03:12:28 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-24 03:12:28 -0500
+
+
+Started GET "/assets/slick/slick.self-3e611f720b763cc018016abb8bb4037bff655c1ca995b84200bcb5efecfe24f9.css?body=1" for ::1 at 2016-02-24 03:12:28 -0500
+
+
+Started GET "/assets/application.self-d885a0a66bd595c10edb24f8879f94e334d88be0730c4d7c7a7b57c731c09037.css?body=1" for ::1 at 2016-02-24 03:12:28 -0500
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-24 03:12:29 -0500
+
+
+Started GET "/assets/css/bootstrap.self-598365399e6ae8f5a456a189663bac8ef9b8996ace38626328403f280fd63400.css?body=1" for ::1 at 2016-02-24 03:12:29 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-24 03:12:29 -0500
+
+
+Started GET "/assets/angular/angular.self-d7c642a2239d433e219a2df47d65f3290d6ec49b679e42a3c8e8099a4a86d8f0.js?body=1" for ::1 at 2016-02-24 03:12:29 -0500
+
+
+Started GET "/assets/project.self-8df8f1d3667a170aa21679541c755cf98b8c1752f1498e97944cfc77387d6782.js?body=1" for ::1 at 2016-02-24 03:12:29 -0500
+
+
+Started GET "/assets/application.self-a1a74291c4c48f2f663a025ffa678498d6448b849a2d74c0ca25e39ee192c0a7.js?body=1" for ::1 at 2016-02-24 03:12:29 -0500
+
+
+Started GET "/assets/js/bootstrap.self-d0e973a52d36a01036265aeefaf2d1ae3499d2cb231a9be3bd846432daf231de.js?body=1" for ::1 at 2016-02-24 03:12:29 -0500
+
+
+Started GET "/assets/controllers/ProjectController.self-e747f41a5a7708c247ec663cdf56432554a0fbb40a54c9e96906d319e316d75b.js?body=1" for ::1 at 2016-02-24 03:12:29 -0500
+
+
+Started GET "/assets/slick.min.self-2d7ee46f8f7bd3ae37fbda706b02238b45d75f99908d181c717abb7be3765243.js?body=1" for ::1 at 2016-02-24 03:12:29 -0500
+
+
+Started GET "/assets/top/MonumentValley-e8b76b962b83884ce1e7646bbba3e4d2a62d735a1031ba6d5725d38119b8ee38.jpg" for ::1 at 2016-02-24 03:12:29 -0500
+
+
+Started GET "/assets/top/GrandTeton-cbdd20386bc51c93d708212e9811cad988dbb952cd0b26ca66e96df80b6ef458.jpg" for ::1 at 2016-02-24 03:12:29 -0500
+
+
+Started GET "/assets/top/GrandCanyon-2655f140a6fe7ae7e9408067e65abe8236a693cd515fc5579863f63448143430.jpg" for ::1 at 2016-02-24 03:12:29 -0500
+
+
+Started GET "/assets/top/CedarBreaks-b861240555367cdc59a6aaf177b52f1b9955dc754587070c1781352e0b3e76cc.jpg" for ::1 at 2016-02-24 03:12:29 -0500
+
+
+Started GET "/assets/icons/facebook-482509c2698ae4a152b165f7c7bec4728f10cc316e69319a141db19613453cd4.png" for ::1 at 2016-02-24 03:12:29 -0500
+
+
+Started GET "/assets/icons/linkedin-9ed1fb640a16936cdd35a4527e0ff2486bbe2eab6b723ee5caecb64cd109babb.png" for ::1 at 2016-02-24 03:12:29 -0500
+
+
+Started GET "/assets/top/CentreIsland-60fbf5f049e9652ef6df871ff37beb5171fd6d9a787fbfc69b521f9849269359.jpg" for ::1 at 2016-02-24 03:12:29 -0500
+
+
+Started GET "/assets/icons/github-c4a2598129c8417f2e112a39167a2253d7427a9e1aa3f7e34b761da2eeab3c8c.png" for ::1 at 2016-02-24 03:12:29 -0500
+
+
+Started GET "/assets/top/MonumentValley-e8b76b962b83884ce1e7646bbba3e4d2a62d735a1031ba6d5725d38119b8ee38.jpg" for ::1 at 2016-02-24 03:12:29 -0500
+
+
+Started GET "/assets/top/CedarBreaks-b861240555367cdc59a6aaf177b52f1b9955dc754587070c1781352e0b3e76cc.jpg" for ::1 at 2016-02-24 03:12:29 -0500
+
+
+Started GET "/assets/top/GrandCanyon-2655f140a6fe7ae7e9408067e65abe8236a693cd515fc5579863f63448143430.jpg" for ::1 at 2016-02-24 03:12:29 -0500
+
+
+Started GET "/assets/icons/facebook-482509c2698ae4a152b165f7c7bec4728f10cc316e69319a141db19613453cd4.png" for ::1 at 2016-02-24 03:12:29 -0500
+
+
+Started GET "/assets/top/CentreIsland-60fbf5f049e9652ef6df871ff37beb5171fd6d9a787fbfc69b521f9849269359.jpg" for ::1 at 2016-02-24 03:12:29 -0500
+
+
+Started GET "/assets/top/GrandTeton-cbdd20386bc51c93d708212e9811cad988dbb952cd0b26ca66e96df80b6ef458.jpg" for ::1 at 2016-02-24 03:12:29 -0500
+
+
+Started GET "/assets/icons/github-c4a2598129c8417f2e112a39167a2253d7427a9e1aa3f7e34b761da2eeab3c8c.png" for ::1 at 2016-02-24 03:12:29 -0500
+
+
+Started GET "/assets/icons/linkedin-9ed1fb640a16936cdd35a4527e0ff2486bbe2eab6b723ee5caecb64cd109babb.png" for ::1 at 2016-02-24 03:12:29 -0500
+
+
+Started GET "/assets/icons/email-4d64f1f502f8e9b176afbe4542a97446901ce59c59cd90046f7c35b98ba9fd3e.png" for ::1 at 2016-02-24 03:12:29 -0500
+
+
+Started GET "/" for ::1 at 2016-02-24 03:12:32 -0500
+Processing by PagesController#about as HTML
+  Rendered pages/about.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 44ms (Views: 43.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/blog" for ::1 at 2016-02-24 03:12:35 -0500
+Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (0.1ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 31ms (Views: 30.7ms | ActiveRecord: 0.1ms)
