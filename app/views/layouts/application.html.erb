@@ -69,6 +69,11 @@
 			<% end %>
 		<% end %>
 
+		<div class="buttons">
+			<button class="button">
+				<%= link_to "New Blog", new_article_path %>
+			</button>
+		</div>
 		<% if false %>
 			<% if user_signed_in? %>
 				<p class="authenticate"><%= link_to "New Blog", new_article_path %></p>
@@ -79,14 +84,14 @@
 
 	<script type="text/javascript">
 		$('.topCarousel').slick({
-			dots: false,
-			arrows: false,
-			fade: true,
-			infinite: true,
-		  	slidesToShow: 1,
-		  	autoplay: true,
-		  	autoplaySpeed: 5000
-		});
-	</script>
+dots: false,
+arrows: false,
+fade: true,
+infinite: true,
+slidesToShow: 1,
+autoplay: true,
+autoplaySpeed: 5000
+});
+</script>
 </body>
 </html>
