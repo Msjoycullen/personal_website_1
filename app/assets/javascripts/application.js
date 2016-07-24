@@ -17,4 +17,3 @@
 
 //= require slick.min
 //= require project
-//= require controllers/ProjectController

@@ -63,19 +63,15 @@
 		<div class="legal"><p>© Joy Zhang 2016.</p></div>
 
 		<!-- user authentication -->
-		<% if false %>
-			<% if !user_signed_in? %>
-				<p class="authenticate"><%= link_to "Admin Login", new_user_session_path %></p>
-			<% end %>
+		<% if !user_signed_in? %>
+			<p class="authenticate"><%= link_to "Admin Login", new_user_session_path %></p>
 		<% end %>
 
-		<% if false %>
-			<% if user_signed_in? %>
-				<p class="authenticate"><%= link_to "New Blog", new_article_path %></p>
-				<p class="authenticate"><%= link_to('Logout', destroy_user_session_path, :method => :delete) %></p>
-			<% end %>
+		<% if user_signed_in? %>
+			<p class="authenticate"><%= link_to "New Blog", new_article_path %></p>
+			<p class="authenticate"><%= link_to('Logout', destroy_user_session_path, :method => :delete) %></p>
 		<% end %>
-	</div>
+    </div>
 
 	<script type="text/javascript">
 		$('.topCarousel').slick({

@@ -2,14 +2,12 @@
 <div class="container">
 	<h1 class="title"><%= @article.title %></h1>
 	<p class="date">Submitted <%= time_ago_in_words(@article.created_at) %> Ago
-	<% if false %>
 		<% if user_signed_in? %>
 			| <%= link_to "Edit", edit_article_path(@article) %> |
 			<%= link_to "Delete", article_path(@article),
 			method: :delete,
 			data: { confirm: 'Are you sure?' } %>
 		<% end %>
-	<% end %>
 	</p>
 
 	<p class="body"><%= @article.body %></p>
@@ -22,6 +20,7 @@
 			<h3>Add a comment:</h3>
 			<%= render "comments/form" %>
 		</div>
-	<% end %>
+    <% end %>
+
 	<%= link_to 'back', articles_path %>
 </div>
