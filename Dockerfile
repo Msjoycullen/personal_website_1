@@ -13,4 +13,5 @@ RUN bundle install
 RUN bundle exec rake db:migrate
 
 EXPOSE 3000
+VOLUME ["/app/db"]
 CMD bin/rails server --port 3000 --binding 0.0.0.0
